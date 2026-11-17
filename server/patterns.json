@@ -1,0 +1,314 @@
+{
+    "version":  6,
+    "categories":  [
+                       "urgency",
+                       "authority_or_lure",
+                       "action_trap",
+                       "suspicious_link"
+                   ],
+    "trustedDomains":  [
+                           "onlinesbi.sbi",
+                           "sbi.co.in",
+                           "hdfcbank.com",
+                           "icicibank.com",
+                           "axisbank.com",
+                           "kotak.com",
+                           "npci.org.in",
+                           "indiapost.gov.in",
+                           "airtel.in",
+                           "jio.com"
+                       ],
+    "patterns":  [
+                     {
+                         "id":  "urgency_immediate",
+                         "category":  "urgency",
+                         "points":  15,
+                         "phrases":  [
+                                         "immediately",
+                                         "immediate action",
+                                         "act now",
+                                         "urgent",
+                                         "urgent action",
+                                         "turant",
+                                         "turant karein",
+                                         "turant update kare",
+                                         "turant kare",
+                                         "abhi kare"
+                                     ]
+                     },
+                     {
+                         "id":  "urgency_within_hours",
+                         "category":  "urgency",
+                         "points":  15,
+                         "phrases":  [
+                                         "within 24 hours",
+                                         "within 24h",
+                                         "within 12 hours",
+                                         "within 2 hours",
+                                         "within 1 hour",
+                                         "within 30 minutes",
+                                         "by tonight"
+                                     ]
+                     },
+                     {
+                         "id":  "urgency_threat_timing",
+                         "category":  "urgency",
+                         "points":  15,
+                         "phrases":  [
+                                         "last warning",
+                                         "final notice",
+                                         "expires today",
+                                         "disconnected today",
+                                         "blocked today",
+                                         "suspended today",
+                                         "expire today",
+                                         "will be blocked"
+                                     ]
+                     },
+                     {
+                         "id":  "lure_identity_threat",
+                         "category":  "authority_or_lure",
+                         "points":  20,
+                         "phrases":  [
+                                         "kyc expired",
+                                         "kyc has expired",
+                                         "kyc suspended",
+                                         "kyc update",
+                                         "kyc update required",
+                                         "update your kyc",
+                                         "update kyc",
+                                         "pan suspended",
+                                         "pan expired",
+                                         "pan aadhaar",
+                                         "account suspended",
+                                         "account blocked",
+                                         "account has been blocked",
+                                         "account will be closed",
+                                         "your account is suspended",
+                                         "card has been blocked",
+                                         "atm card blocked",
+                                         "re kyc",
+                                         "digital arrest",
+                                         "illegal goods",
+                                         "illegal package",
+                                         "case filed against you",
+                                         "warrant issued",
+                                         "narcotics",
+                                         "police has been informed",
+                                         "your name in the",
+                                         "aapka khata band ho jayega",
+                                         "khata band",
+                                         "aadhaar pan link kare",
+                                         "pan link kare"
+                                     ]
+                     },
+                     {
+                         "id":  "lure_loan_offer",
+                         "category":  "authority_or_lure",
+                         "points":  20,
+                         "phrases":  [
+                                         "pre-approved loan",
+                                         "instant loan",
+                                         "0% interest",
+                                         "zero interest",
+                                         "loan available",
+                                         "loan approved",
+                                         "emi tenure",
+                                         "no collateral"
+                                     ]
+                     },
+                     {
+                         "id":  "lure_utility_threat",
+                         "category":  "authority_or_lure",
+                         "points":  20,
+                         "phrases":  [
+                                         "electricity bill",
+                                         "power will be disconnected",
+                                         "power disconnection",
+                                         "electricity department",
+                                         "power department",
+                                         "bill overdue",
+                                         "water bill",
+                                         "gas bill",
+                                         "bescom",
+                                         "mseb",
+                                         "bijli bill baki hai",
+                                         "bijli bill",
+                                         "bijli cut"
+                                     ]
+                     },
+                     {
+                         "id":  "lure_delivery_threat",
+                         "category":  "authority_or_lure",
+                         "points":  20,
+                         "phrases":  [
+                                         "incomplete address",
+                                         "package held",
+                                         "parcel held",
+                                         "customs parcel",
+                                         "customs department",
+                                         "india post",
+                                         "delivery failed",
+                                         "re-delivery",
+                                         "package is on hold",
+                                         "illegal parcel"
+                                     ]
+                     },
+                     {
+                         "id":  "lure_prize",
+                         "category":  "authority_or_lure",
+                         "points":  20,
+                         "phrases":  [
+                                         "you have won",
+                                         "won a prize",
+                                         "won the lottery",
+                                         "lottery",
+                                         "jackpot",
+                                         "prize money",
+                                         "credited to your account",
+                                         "refund initiated",
+                                         "money has been credited",
+                                         "cashback",
+                                         "pm kisan yojana bonus",
+                                         "pm kisan",
+                                         "yojana bonus"
+                                     ]
+                     },
+                     {
+                         "id":  "lure_job_income",
+                         "category":  "authority_or_lure",
+                         "points":  20,
+                         "phrases":  [
+                                         "part time job",
+                                         "work from home job",
+                                         "earn ₹",
+                                         "earn rs",
+                                         "daily income",
+                                         "per day income",
+                                         "joining bonus",
+                                         "guaranteed income"
+                                     ]
+                     },
+                     {
+                         "id":  "action_otp",
+                         "category":  "action_trap",
+                         "points":  30,
+                         "guards":  [
+                                        "do not share",
+                                        "never share",
+                                        "don\u0027t share"
+                                    ],
+                         "phrases":  [
+                                         "share otp",
+                                         "share your otp",
+                                         "send otp",
+                                         "send me the otp",
+                                         "tell me the otp",
+                                         "tell me your otp",
+                                         "otp to receive",
+                                         "otp bataye",
+                                         "otp bheje"
+                                     ]
+                     },
+                     {
+                         "id":  "action_upi_pin",
+                         "category":  "action_trap",
+                         "points":  30,
+                         "guards":  [
+                                        "do not share",
+                                        "never share",
+                                        "don\u0027t share"
+                                    ],
+                         "phrases":  [
+                                         "upi pin",
+                                         "enter your pin",
+                                         "pin to receive money",
+                                         "pin to receive"
+                                     ]
+                     },
+                     {
+                         "id":  "action_screen_share",
+                         "category":  "action_trap",
+                         "points":  30,
+                         "guards":  [
+                                        "do not share",
+                                        "never share",
+                                        "don\u0027t share"
+                                    ],
+                         "phrases":  [
+                                         "screen sharing",
+                                         "anydesk",
+                                         "teamviewer",
+                                         "remote access",
+                                         "screen share"
+                                     ]
+                     },
+                     {
+                         "id":  "action_install",
+                         "category":  "action_trap",
+                         "points":  30,
+                         "guards":  [
+                                        "do not share",
+                                        "never share",
+                                        "don\u0027t share"
+                                    ],
+                         "phrases":  [
+                                         "download apk",
+                                         "install apk",
+                                         "apk file",
+                                         "install this app",
+                                         "install the app"
+                                     ]
+                     },
+                     {
+                         "id":  "action_call",
+                         "category":  "action_trap",
+                         "points":  30,
+                         "guards":  [
+                                        "do not share",
+                                        "never share",
+                                        "don\u0027t share"
+                                    ],
+                         "phrases":  [
+                                         "call this number",
+                                         "call the number",
+                                         "whatsapp this number",
+                                         "contact this number"
+                                     ]
+                     },
+                     {
+                         "id":  "action_money_details",
+                         "category":  "action_trap",
+                         "points":  30,
+                         "guards":  [
+                                        "do not share",
+                                        "never share",
+                                        "don\u0027t share"
+                                    ],
+                         "phrases":  [
+                                         "share your card number",
+                                         "card number",
+                                         "cvv",
+                                         "atm pin",
+                                         "share your aadhaar",
+                                         "processing fee",
+                                         "verification fee",
+                                         "re-delivery fee",
+                                         "delivery charge",
+                                         "small fee"
+                                     ]
+                     },
+                     {
+                         "id":  "lure_task_scam",
+                         "category":  "authority_or_lure",
+                         "points":  20,
+                         "phrases":  [
+                                         "task bonus",
+                                         "recharge task",
+                                         "minimum deposit",
+                                         "earn daily",
+                                         "whatsapp us on"
+                                     ]
+                     }
+                 ]
+}
